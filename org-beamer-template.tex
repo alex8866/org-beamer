@@ -1,0 +1,146 @@
+% Created 2014-09-23 Tue 01:14
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Org-Mode Beamer Ready Templates}
+\author{Yagnesh Raghava Yakkala}
+\date{\today}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
+\usetheme{CambridgeUS}\usecolortheme{default}
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+\frametitle{Outline}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\end{frame}
+
+\section{Plain}
+\label{sec-1}
+\begin{frame}
+\frametitle{Place a figure}
+\label{sec-1-1}
+
+\centering
+\includegraphics[width=0.75\textwidth]{path/to/fig.jpg}
+\end{frame}
+\section{Two Columns}
+\label{sec-2}
+\begin{frame}
+\frametitle{one figures with bullets}
+\label{sec-2-1}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\label{sec-2-1-1}
+
+\begin{itemize}
+\item bullet one
+\item bullet two
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\label{sec-2-1-2}
+
+\includegraphics[width=0.90\textwidth]{path/to/fig.jpg}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}
+\frametitle{Two figures in one frame}
+\label{sec-2-2}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\label{sec-2-2-1}
+
+\includegraphics[width=0.90\textwidth]{path/to/fig.jpg}
+\end{column}
+\begin{column}{0.5\textwidth}
+\label{sec-2-2-2}
+
+\includegraphics[width=0.90\textwidth]{path/to/fig.jpg}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}
+\frametitle{another way to make two columns}
+\label{sec-2-3}
+\begin{columns}
+\begin{column}{.5\textwidth}
+\begin{itemize}
+
+\item First col
+\label{sec-2-3-1}%
+\begin{itemize}
+\item first col
+\item first col
+\item first col
+\item first col
+\item first col
+\end{itemize}
+
+\end{itemize} % ends low level
+\end{column}
+\begin{column}{.5\textwidth}
+\begin{itemize}
+
+\item Second col
+\label{sec-2-3-2}%
+\begin{itemize}
+\item second col
+\item second col
+\item second col
+\item second col
+\item second col
+\end{itemize}
+
+\end{itemize} % ends low level
+\end{column}
+\end{columns}
+\end{frame}
+\section{Split frame horizontally}
+\label{sec-3}
+\begin{frame}
+\frametitle{this has four parts in it}
+\label{sec-3-1}
+\end{frame}
+\section{Text Placing}
+\label{sec-4}
+\begin{frame}
+\frametitle{place over head in slide}
+\label{sec-4-1}
+\end{frame}
+\section{Conclusion}
+\label{sec-5}
+\begin{frame}
+\frametitle{links}
+\label{sec-5-1}
+
+\href{http://orgmode.org}{Emacs org-mode} is fun
+\end{frame}
+\begin{frame}
+\frametitle{Tell me if you know more}
+\label{sec-5-2}
+\end{frame}
+
+\end{document}
